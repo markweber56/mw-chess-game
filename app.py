@@ -9,3 +9,8 @@ def index():
 @app.route("/home")
 def home():
         return("this is the home page!")
+
+@app.route("/data")
+def data():
+    data = {'a': 1, 'b': 'a string'}
+    return data
