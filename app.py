@@ -23,7 +23,7 @@ def data():
     return data
 
 @socketio.on("message")
-def handleMessage():
+def handleMessage(msg):
     print(msg)
     send(msg, broadcast=True)
     return
